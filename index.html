@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>sleCal</title>
+    <link href="preset.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="main-heading">
+      <h1 id="main-heading">SleCal</h1>
+    </div>
+  
+     <div class="wakeup-time-ques">
+      <h4>What time do you want to wake up?</h4>
+    </div>
+    <input type="text" class="time-pickable" value="06:00 am" readonly >
+    <button class="calculate-bedtime-preset">Calculate bedtime</button>
+    <div>
+      <p class="suggested-time-preset"></p>
+    </div>
+    <ul>
+      <li class="cycles-preset"></li>
+      <li class="cycles-preset"></li>
+      <li class="cycles-preset"></li>
+      <li class="cycles-preset"></li>
+      <li class="cycles-preset"></li>
+      <li class="cycles-preset"></li>
+    </ul>
+    
+    <br>
+    
+    <div class="wakeup-time-for-current">
+      <h3>If you sleep now, you should wake up at:</h3>
+    </div>
+    <button id="calculateButtonCurrent">Calculate </button>
+    
+     
+    <div>
+      <div id="suggested-time-for-current"></div>
+    </div>
+    <p><em id="fifteenMinLineCurrent"></em></p>
+    <div class="cycle-div-current">
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+    </div>
+
+    
+   
+    
+    <script src="script.js"></script>
+    <script src="mainForPresets.js" type="module"></script>            
+  </body>
+</html>
+
+
+
