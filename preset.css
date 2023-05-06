@@ -15,11 +15,9 @@
   border-radius: 6px;
   padding: 6px 10px; 
   background: #ffffff; 
-/*   background: #ffffff; 
-  chahiye but agr background-color JS ke sath change krna ho so ~wait~ */
+  background: #ffffff; 
+  /* chahiye but agr background-color JS ke sath change krna ho so ~wait~ */
   cursor: pointer;
   font-family: 'Heebo', 'sans-serif' ;
 }
-ul {
-  list-style-type: none;
-}
+
