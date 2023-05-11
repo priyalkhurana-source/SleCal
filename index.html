@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>sleCal</title>
     <link href="preset.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
      <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMHL3W28ED"></script>
 <script>
@@ -24,18 +25,21 @@
       <h4>What time do you want to wake up?</h4>
     </div>
     <input type="text" class="time-pickable" value="06:00 am" readonly >
-    <button class="calculate-bedtime-preset">Calculate bedtime</button>
+    <button id="calculate-bedtime-preset" class="calculate-bedtime-preset">Calculate bedtime</button>
+    <br>
     <div>
-      <p class="suggested-time-preset"></p>
+    <p id="suggested-time-preset" class="suggested-time-preset"></p>
     </div>
-    
-    <div class="cycles-preset"></div>
-    <div class="cycles-preset"></div>
-    <div class="cycles-preset"></div>
-    <div class="cycles-preset"></div>
-    <div class="cycles-preset"></div>
-    <div class="cycles-preset"></div>
-    
+    <em><p id="doesnt-fit-schedule"></p></em>
+    <div id="cycles-preset-container">
+      <ul class="cycles-preset"></ul>
+      <ul class="cycles-preset"></ul>
+      <ul class="cycles-preset"></ul>
+      <ul class="cycles-preset"></ul>
+      <ul class="cycles-preset"></ul>
+      <ul class="cycles-preset"></ul>  
+</div>
+
     
     <br>
     
@@ -44,18 +48,18 @@
     </div>
     <button id="calculateButtonCurrent">Calculate </button>
     
-     <br>
-    <br><div>
+     
+    <div>
       <div id="suggested-time-for-current"></div>
     </div>
     <p><em id="fifteenMinLineCurrent"></em></p>
     <div class="cycle-div-current">
-      <div class="cycle-time-current"></div>
-      <div class="cycle-time-current"></div>
-      <div class="cycle-time-current"></div>
-      <div class="cycle-time-current"></div>
-      <div class="cycle-time-current"></div>
-      <div class="cycle-time-current"></div>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
+      <ul class="cycle-time-current"></ul>
     </div>
 
     
@@ -64,6 +68,7 @@
     <script src="script.js"></script>
     <script src="mainForPresets.js" type="module"></script>            
   </body>
+</html>
 </html>
 
 

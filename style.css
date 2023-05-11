@@ -1,65 +1,175 @@
-/* main heading */
-#main-heading {
-  font-size: 3rem;
-  text-align: center;
+/* General styling */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* wakeup time question */
-.wakeup-time-ques {
-  margin-top: 3rem;
-  text-align: center;
+h1 { 
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
 }
 
-/* calculate button */
-#calculateButtonCurrent {
-  display: block;
-  margin: 2rem auto;
-  padding: 1rem;
-  font-size: 1.2rem;
+
+ h2, h3, h4, h5, h6 {
   font-weight: bold;
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  background-color: #222;
   color: #fff;
-  background-color: #6c5ce7;
+  padding: 10px 20px;
+  border-radius: 5px;
   border: none;
-  border-radius: 0.5rem;
   cursor: pointer;
 }
 
-#calculateButtonCurrent:hover {
-  background-color: #4834d4;
+button:hover {
+  background-color: #333;
 }
 
-/* suggested time */
-#suggested-time-current {
-  margin-top: 2rem;
+/* Header section */
+
+.main-heading {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+  margin-top: 20px;
 }
 
-/* fifteen minute line */
-#fifteenMinLineCurrent {
+#main-heading {
+  font-size: 3em;
+}
+
+/* Preset section */
+
+.wakeup-time-ques {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.time-pickable {
   display: block;
-  margin-top: 2rem;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+  font-size: 1.2em;
   text-align: center;
-  font-style: italic;
-  color: #888;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* cycle times */
-.cycle-div-current {
-  margin-top: 2rem;
+.calculate-bedtime-preset {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#doesnt-fit-schedule {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1.2em;
+  color: #777;
+}
+.suggested-time-preset {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* .cycles-preset {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+} */
+
+.cycles-preset {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+
+#cycles-preset-container {
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 30px;
+  }
+
+.cycles-preset {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* margin-left: 30px; */
+  
+}
+
+
+
+/* Current time section */
+
+.wakeup-time-for-current {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#calculateButtonCurrent {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#suggested-time-for-current {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#fifteenMinLineCurrent {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+}
+
+.cycle-div-current {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .cycle-time-current {
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }

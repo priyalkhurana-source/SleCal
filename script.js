@@ -43,7 +43,7 @@ function sleCal() {
 
   const cycleElementsCurrent = document.getElementsByClassName("cycle-time-current"); // get all elements with the class "cycle-time"
   for (let i = 0; i < cycleElementsCurrent.length; i++) {
-    cycleElementsCurrent[i].textContent = `Cycle ${i + 1} => ${cycles[i]}`; // update the content of each cycle element with the corresponding cycle time string
+    cycleElementsCurrent[i].textContent = cycles[i]; // update the content of each cycle element with the corresponding cycle time string
   }
 }
 

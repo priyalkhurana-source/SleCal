@@ -41,16 +41,22 @@ const timePickable = document.querySelector(".time-pickable");
 
     // Add the bedtime to the cycles array
     cycles.push(bedtime);
-
+    
+    
+    
     // Display the calculated bedtime for the current sleep cycle
     const cycleElements = document.querySelectorAll('.cycles-preset');
-    cycleElements[i].textContent =  `Bedtime before ${SLEEP_CYCLES[i]} cycles => ${bedtime}`;
+    cycleElements[i].textContent =  bedtime;
   }   
 
+   // display doesnt fit schedule line 
+    const schedulePresetElement = document.querySelector('#doesnt-fit-schedule'); 
+   schedulePresetElement.textContent = "If this doesn't fit you schedule, you can sleep at: "
   // Display the last two cycles as suggested time
   const suggestedPresetElement = document.querySelector('.suggested-time-preset');
   suggestedPresetElement.textContent = `Suggested:  ${cycles[0]} or ${cycles[1]}`;
+   
 }
 
-
 calcBtn.addEventListener("click", calcWithTP);
+
